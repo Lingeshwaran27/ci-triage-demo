@@ -17,4 +17,4 @@ def apply_discount(amount: float, percent: float) -> float:
     """Applies a percentage discount (0-100)."""
     if percent < 0 or percent > 100:
         raise ValueError(f"invalid discount: {percent}")
-    return round(amount * (1 - percent / 100), 2)
+    return round(amount - percent, 2)
