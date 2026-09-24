@@ -12,7 +12,7 @@ jobs:
   build-and-test:
     runs-on: ubuntu-latest
     env:
-      CURRENCY_CODE: INR
+      CURRENCY: INR
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
